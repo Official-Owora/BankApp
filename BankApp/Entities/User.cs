@@ -10,5 +10,6 @@ namespace BankApp.Entities
         public string EmailAddress { get; set; }
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
+        public List<Account> UserAccounts { get; set; }
     }
 }

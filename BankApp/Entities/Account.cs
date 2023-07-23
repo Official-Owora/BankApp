@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace BankApp.Entities
 {
@@ -12,5 +13,6 @@ namespace BankApp.Entities
         public string LastName { get; set; }
         public decimal AccountBalance { get; set; }
         public string AccountType { get; set; }
+        List<Transaction> Transactions { get; set; }
     }
 }
